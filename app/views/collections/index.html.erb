@@ -1,0 +1,20 @@
+<div class='container'>
+    <div class='row'>
+        <div class='col-3'>
+            <% @collections.each do |c| %>
+                <%= link_to show_collection_path(c) do %>
+                    <p><%= c.name %></p>
+                <% end %>
+            <% end %>
+        </div>
+        <div class='col-3'>
+            
+        </div>
+        <div class='col-3'>
+            
+        </div>
+        <div class='col-3'>
+            
+        </div>
+    </div>
+</div>

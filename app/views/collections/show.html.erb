@@ -1,0 +1,12 @@
+<div class='container'>
+    <div class='row'>
+        <div class='col-3'>
+            <% @products.each do |prod| %>
+                <%= link_to collection_product_path(prod) do %> 
+                    <p><%= prod.name %></p>
+                <% end %>
+            <% end %>    
+        </div>
+    </div>
+    
+</div>

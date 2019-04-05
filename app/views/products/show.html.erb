@@ -1,0 +1,20 @@
+<div class='container'>
+    <div class='row'>
+        <% @items.each do |item| %>
+        <div class='col-3'>
+            <p><%= item.item_number %></p>    
+        </div>
+        <div class='col-3'>
+            <p><%= item.name %></p>
+        </div>
+        <div class='col-3'>
+            <p><%= item.item_value %></p>
+        </div>
+        <div class='col-3'>
+            <p><%= link_to 'show item', show_item_path(item) %></p>    
+        </div>
+        <% end %>
+    </div>
+</div>
+
+
